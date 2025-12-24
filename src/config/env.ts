@@ -8,7 +8,11 @@ export const config = {
   corsOrigin: process.env.CORS_ORIGIN || "",
   corsOrigins: process.env.CORS_ORIGINS
     ? process.env.CORS_ORIGINS.split(",")
-    : ["http://localhost:3000", "http://localhost:8000"],
+    : [
+        "http://localhost:3000",
+        "http://localhost:8000",
+        "https://photomonix-frontend.vercel.app/",
+      ],
   nodeEnv: process.env.NODE_ENV || "development",
   // Upload Configuration
   upload: {

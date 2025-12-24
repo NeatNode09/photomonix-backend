@@ -357,7 +357,7 @@ export const sendVerificationEmail = async (
 ): Promise<boolean> => {
   try {
     const verificationUrl = `${
-      process.env.FRONTEND_URL || "https://photomonix.app"
+      process.env.FRONTEND_URL || "https://photomonix-frontend.vercel.app/"
     }/verify-email?token=${verificationToken}`;
 
     const mailOptions = {
@@ -725,7 +725,7 @@ export const sendPasswordResetEmail = async (
 ): Promise<boolean> => {
   try {
     const resetUrl = `${
-      process.env.FRONTEND_URL || "https://photomonix.app"
+      process.env.FRONTEND_URL || "https://photomonix-frontend.vercel.app/"
     }/reset-password?token=${resetToken}`;
 
     const mailOptions = {
