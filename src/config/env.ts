@@ -11,7 +11,7 @@ export const config = {
     : [
         "http://localhost:3000",
         "http://localhost:8000",
-        "https://photomonix-frontend.vercel.app/",
+        "https://photomonix-frontend.vercel.app",
       ],
   nodeEnv: process.env.NODE_ENV || "development",
   // Upload Configuration
